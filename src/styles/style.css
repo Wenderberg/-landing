@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -12,8 +17,13 @@
 }
 
 .header {
+  z-index: 100;
   width: 100%;
-  position: absolute;
+  height: 45px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: transparent;
 }
 .header__content {
@@ -72,7 +82,11 @@
 .first__section {
   background: gray url("/src/images/BG1.png") center/cover no-repeat;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100vh;
+  width: 100%;
 }
 .first__section-forms {
   width: 1180px;
@@ -92,4 +106,65 @@
   font-weight: 700;
   line-height: 150%; /* 75px */
   letter-spacing: 1px;
+  position: fixed;
+  bottom: 274px;
+}
+.first__section-forms {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
+  position: fixed;
+  bottom: 82px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.first__section-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 52px;
+  margin-top: 42px;
+  padding: 0px 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--wl-primary-primary-300, #E1E3E4);
+  background: rgba(255, 255, 255, 0);
+  color: #FDFDFD;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.first__section-form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FDFDFD;
+  color: #1A3E3E;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.192px;
 }
